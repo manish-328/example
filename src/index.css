@@ -1,10 +1,12 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* Optional: global font or reset */
 html,
 body {
-  @apply font-pretendard bg-gray-50 text-gray-900;
+  @apply bg-gray-50 text-gray-900;
+  input[type="checkbox"]:checked {
+    background-color: #eab308; /* Tailwind yellow-500 */
+    border-color: #eab308;
+    color: white; /* ✅ Makes the tick white */
+  }
 }

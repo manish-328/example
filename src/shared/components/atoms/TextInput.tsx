@@ -47,7 +47,7 @@ export default function TextInput({
       onBlur={onBlur}
       onKeyDown={onKeyDown}
       className={classNameMerge(
-        "w-full h-11 rounded-xl border border-gray-300 px-4 outline-none",
+        "w-full h-11 rounded-xl border border-gray-300 px-4 outline-none ",
         "focus:ring-2 focus:ring-black/30 focus:border-black",
         "placeholder:text-gray-400",
         disabled && "bg-gray-100 cursor-not-allowed",

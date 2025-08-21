@@ -39,8 +39,9 @@ export default function Checkbox({
         defaultChecked={defaultChecked}
         disabled={disabled}
         onChange={onChange}
-        className="h-4 w-4 rounded border-gray-300 text-black focus:ring-black/30"
+        className="h-4 w-4 rounded border-gray-300 text-black focus:ring-black/30 accent-yellow-500"
       />
+
       {label && <span className="text-sm text-gray-700">{label}</span>}
     </label>
   );

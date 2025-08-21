@@ -23,7 +23,7 @@ export default function BasicButton({
   }[size];
 
   const variants = {
-    primary: "bg-black text-white hover:opacity-90",
+    primary: "bg-gray-200 text-gray-400 hover:opacity-90",
     outline: "border border-black text-black hover:bg-black/5",
     ghost: "text-black hover:bg-black/5",
   }[variant];

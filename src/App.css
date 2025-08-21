@@ -16,3 +16,9 @@
 .wiggle {
   animation: wiggle 1s ease-in-out infinite;
 }
+/* Custom checkbox tick color */
+input[type="checkbox"]:checked {
+  background-color: #eab308; /* Tailwind yellow-500 */
+  border-color: #eab308;
+  color: white; /* ✅ Makes the tick ✔ white */
+}
