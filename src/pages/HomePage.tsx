@@ -14,8 +14,9 @@ export default function Homepage() {
         className="relative w-full h-[600px] bg-cover bg-center mt-16"
         // 👆 pushes hero image down by navbar height
         style={{
-          backgroundImage:
-            "url('/assets/0007dd85a48a15ca98317658340291aa526e681c.jpg')",
+          backgroundImage: `${
+            import.meta.env.BASE_URL
+          }assets/0007dd85a48a15ca98317658340291aa526e681c.jpg`,
         }}
       >
         {/* Fade overlay */}

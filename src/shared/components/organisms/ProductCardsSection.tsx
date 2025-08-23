@@ -2,10 +2,22 @@
 import ProductCardGrid from "../molecules/ProductCardGrid";
 
 const products = [
-  { image: "/assets/product.jpg", title: "Product One" },
-  { image: "/assets/product.jpg", title: "Product Two" },
-  { image: "/assets/product.jpg", title: "Product Three" },
-  { image: "/assets/product.jpg", title: "Product Four" },
+  {
+    image: `${import.meta.env.BASE_URL}assets/carousel1.png`,
+    title: "Product One",
+  },
+  {
+    image: `${import.meta.env.BASE_URL}assets/carousel1.png`,
+    title: "Product Two",
+  },
+  {
+    image: `${import.meta.env.BASE_URL}assets/carousel1.png`,
+    title: "Product Three",
+  },
+  {
+    image: `${import.meta.env.BASE_URL}assets/carousel1.png`,
+    title: "Product Four",
+  },
 ];
 
 export default function ProductCardsSection() {
