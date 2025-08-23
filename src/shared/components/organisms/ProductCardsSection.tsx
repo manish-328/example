@@ -3,19 +3,19 @@ import ProductCardGrid from "../molecules/ProductCardGrid";
 
 const products = [
   {
-    image: `${import.meta.env.BASE_URL}assets/carousel1.png`,
+    image: `${import.meta.env.BASE_URL}assets/product.jpg`,
     title: "Product One",
   },
   {
-    image: `${import.meta.env.BASE_URL}assets/carousel1.png`,
+    image: `${import.meta.env.BASE_URL}assets/product.jpg`,
     title: "Product Two",
   },
   {
-    image: `${import.meta.env.BASE_URL}assets/carousel1.png`,
+    image: `${import.meta.env.BASE_URL}assets/product.jpg`,
     title: "Product Three",
   },
   {
-    image: `${import.meta.env.BASE_URL}assets/carousel1.png`,
+    image: `${import.meta.env.BASE_URL}assets/product.jpg`,
     title: "Product Four",
   },
 ];
