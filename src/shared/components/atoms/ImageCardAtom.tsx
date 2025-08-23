@@ -16,7 +16,7 @@ export default function ImageCardAtom({
       <div
         className="relative overflow-hidden transition-all duration-500 shadow-lg z-10 bg-white"
         style={{
-          width: "16rem",
+          width: "18rem",
           height: "100%",
           borderBottomRightRadius: "50px",
         }}
@@ -51,7 +51,11 @@ export default function ImageCardAtom({
       style={{ width: "12rem", height: "16rem" }}
     >
       {/* Image fills entire card */}
-      <img src={image} alt={title} className="w-full h-full object-cover" />
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-full object-cover pt-14"
+      />
       {/* Title on top-left */}
       <p className="absolute top-3 left-3 text-sm font-semibold text-gray-900 bg-white/60 px-2 py-1 rounded">
         {" "}
