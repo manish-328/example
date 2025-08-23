@@ -33,7 +33,6 @@ export default function LoginPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const newEmailError = "";
     const newPasswordErrors: string[] = [];
 
     // Empty field validation

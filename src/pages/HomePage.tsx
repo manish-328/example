@@ -1,6 +1,8 @@
 // src/pages/Homepage.tsx
 import Navbar from "../shared/components/organisms/Navbar";
 import CarouselSection from "../shared/components/organisms/CarouselSection";
+import ProductCardsSection from "../shared/components/organisms/ProductCardsSection";
+import BlackCardSection from "../shared/components/organisms/BlackCardSection";
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
@@ -40,6 +42,11 @@ export default function Homepage() {
 
       {/*carousel*/}
       <CarouselSection />
+
+      <ProductCardsSection />
+      <ProductCardsSection />
+
+      <BlackCardSection />
     </div>
   );
 }
