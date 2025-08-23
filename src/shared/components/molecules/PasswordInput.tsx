@@ -1,7 +1,5 @@
 // src/shared/components/molecules/PasswordInput.tsx
-import { useState } from "react";
 import BasicInput from "../atoms/BasicInput";
-import { Eye, EyeOff } from "lucide-react";
 
 export interface PasswordInputProps {
   id: string;
@@ -24,8 +22,6 @@ export default function PasswordInput({
   error,
   className,
 }: PasswordInputProps) {
-  const [showPassword, setShowPassword] = useState(false);
-
   return (
     <div className={`flex flex-col gap-1 ${className}`}>
       {/* Label */}
@@ -33,18 +29,16 @@ export default function PasswordInput({
         {label}
       </label>
 
-      {/* Input with toggle */}
+      {/* Input */}
       <div className="relative">
         <BasicInput
           id={id}
           name={name}
-          type={showPassword ? "text" : "password"}
+          type="password"
           value={value}
           placeholder={placeholder}
           onChange={onChange}
-          className={`pr-10 ${
-            error ? "border-red-500 focus:ring-red-500" : ""
-          }`}
+          className={error ? "border-red-500 focus:ring-red-500" : ""}
         />
       </div>
 
