@@ -7,10 +7,14 @@ import HomePage from "../pages/HomePage";
 export default function Router() {
   return (
     <Routes>
+      {/* Default page → Login */}
+      <Route path="/" element={<LoginPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/homepage" element={<HomePage />} />
+
+      {/* Dashboard accessible at /dashboard */}
       <Route element={<DashboardLayout />}>
-        <Route path="/" element={<DashboardPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Route>
     </Routes>
   );
