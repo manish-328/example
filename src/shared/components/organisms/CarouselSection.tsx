@@ -3,19 +3,19 @@ import CarouselTrack from "../molecules/CarouselTrack";
 
 const sampleItems = [
   {
-    image: "/assets/carousel1.png",
+    image: `${import.meta.env.BASE_URL}assets/carousel1.png`,
     title: "계절에 구애받지 않고 \n편하게 입을 수 있는 아노락",
   },
   {
-    image: "/assets/carousel2.png",
+    image: `${import.meta.env.BASE_URL}assets/carousel2.png`,
     title: "가볍고 뛰어난 보온성을\n자랑하는 방한조끼",
   },
   {
-    image: "/assets/carousel3.png",
+    image: `${import.meta.env.BASE_URL}assets/carousel3.png`,
     title: "포근한 따뜻함이\n필요할 때 플리스",
   },
   {
-    image: "/assets/carousel4.png",
+    image: `${import.meta.env.BASE_URL}assets/carousel4.png`,
     title: "쌀쌀한 바람이 부는\n가을에 입기 좋은 자켓",
   },
 ];
