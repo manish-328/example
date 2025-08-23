@@ -4,14 +4,12 @@ import { ShoppingCart, User, Search } from "lucide-react";
 export default function Navbar() {
   return (
     <nav className="absolute top-0 left-0 w-full bg-black text-white z-20">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-xl font-bold text-yellow-500 ml-12 mr-12">
-          LANDAS
-        </h1>
+        <h1 className="text-xl font-bold text-yellow-500 sm:ml-12">LANDAS</h1>
 
-        {/* Navigation Links */}
-        <div className="flex items-center gap-15 text-sm font-medium">
+        {/* Navigation Links (hidden on mobile) */}
+        <div className="hidden sm:flex items-center gap-8 text-sm font-medium">
           <a href="#" className="hover:text-yellow-400">
             SS
           </a>
@@ -35,7 +33,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Icons + Logout */}
+        {/* Icons */}
         <div className="flex items-center gap-4">
           <button className="hover:text-yellow-400">
             <ShoppingCart size={20} />
@@ -46,7 +44,9 @@ export default function Navbar() {
           <button className="hover:text-yellow-400">
             <Search size={20} />
           </button>
-          <button className="hover:text-yellow-400 text-sm font-medium">
+
+          {/* Logout (hidden on mobile) */}
+          <button className="hidden sm:block hover:text-yellow-400 text-sm font-medium">
             Logout
           </button>
         </div>
