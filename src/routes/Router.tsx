@@ -7,13 +7,8 @@ import HomePage from "../pages/HomePage";
 export default function Router() {
   return (
     <Routes>
-      {/* Login route without sidebar/header */}
       <Route path="/login" element={<LoginPage />} />
-
-      {/* Login route without sidebar/header */}
       <Route path="/homepage" element={<HomePage />} />
-
-      {/* Protected dashboard routes */}
       <Route element={<DashboardLayout />}>
         <Route path="/" element={<DashboardPage />} />
       </Route>

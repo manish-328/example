@@ -12,7 +12,8 @@ export default function BasicButton({
   onClick,
   id,
   title,
-}: BasicButtonProps) {
+  type = "button", // ✅ add type prop
+}: BasicButtonProps & { type?: "button" | "submit" | "reset" }) {
   const base =
     "inline-flex items-center justify-center rounded-xl font-medium transition-colors";
 
@@ -30,7 +31,7 @@ export default function BasicButton({
 
   return (
     <button
-      type="button"
+      type={type} // ✅ use the type prop
       disabled={disabled}
       id={id}
       title={title}
