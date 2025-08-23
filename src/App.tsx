@@ -4,7 +4,7 @@ import ScrollToTop from "./shared/hooks/useScrollToTop";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/example">
       <ScrollToTop />
       <Router />
     </BrowserRouter>
